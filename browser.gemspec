@@ -1,10 +1,9 @@
 require "./lib/browser/version"
 
 Gem::Specification.new do |s|
-  s.required_ruby_version = ">= 2.0"
+  s.required_ruby_version = ">= 2.0" unless RUBY_PLATFORM == 'java'
   s.name                  = "browser"
   s.version               = Browser::VERSION
-  s.platform              = Gem::Platform::RUBY
   s.authors               = ["Nando Vieira"]
   s.email                 = ["fnando.vieira@gmail.com"]
   s.homepage              = "http://github.com/fnando/browser"
